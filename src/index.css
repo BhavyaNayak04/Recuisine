@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    background-color: whitesmoke;
+  }
+}
+
+:root {
+  min-height: 100vh;
+}
+
+.container {
+  @apply max-w-screen-xl;
+  @apply mx-auto;
+  @apply p-4 py-6 md:p-12 md:py-12;
+}
+
+.section {
+  @apply max-w-screen-xl;
+  @apply mx-auto;
+  @apply p-4 md:px-12 md:py-6;
+  @apply space-y-2;
+}
+
+.title {
+  @apply text-4xl lg:text-6xl;
+  @apply font-bold;
+}
+
+.heading {
+  @apply text-2xl lg:text-3xl;
+  @apply font-bold capitalize;
+}
+
+.subheading {
+  @apply text-lg lg:text-[1.675rem] leading-9;
+  @apply font-semibold;
+  /* @apply font-bold; */
+}
+
+.body {
+  @apply text-base lg:text-lg;
+  @apply font-extralight;
+}
+
+.caption {
+  @apply text-xs md:text-sm lg:text-base;
+  @apply tracking-wider;
+}
