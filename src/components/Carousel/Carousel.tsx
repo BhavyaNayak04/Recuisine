@@ -1,13 +1,17 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
+
 import { useRef, useEffect } from "react";
 
-export default function Carousel({ children }) {
+interface Props {
+  children: React.ReactNode;
+}
+export default function Carousel({ children }: Props) {
   const currentIndex = useRef(0);
-  const timerId = useRef(null);
-  const carouselRef = useRef(null);
+  const timerId = useRef<number>();
+  const carouselRef = useRef<HTMLDivElement>(null);
   const itemCount = 5;
 
-  function move(prvs, isButtonClick = false) {
+  function move(prvs: boolean, isButtonClick: boolean = false) {
     let to;
     if (prvs) {
       to = (currentIndex.current + itemCount - 1) % itemCount;

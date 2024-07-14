@@ -1,4 +1,4 @@
-import { search } from "../constants";
+import { search } from "../../constants";
 import Orders from "../Items/Orders";
 import ProfileInfo from "./ProfileInfo";
 

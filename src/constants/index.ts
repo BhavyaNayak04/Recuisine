@@ -1,4 +1,6 @@
-export const images = [
+import { CarouselImgType } from "../types";
+
+export const images: CarouselImgType[] = [
   {
     id: "0",
     author: "Alejandro Escamilla",

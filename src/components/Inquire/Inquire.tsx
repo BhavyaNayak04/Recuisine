@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import { search } from "../constants";
+import { search } from "../../constants";
 import { Link } from "react-router-dom";
 import Modal from "../Layout/Modal";
 import Item from "../Items/Item";
@@ -8,6 +8,7 @@ import Item from "../Items/Item";
 export default function Inquire() {
   const [showModal, setShowModal] = useState(false);
   const { id } = useParams();
+  if (!id) return null;
   const searchId = parseInt(id);
   const newSearch = search.filter((item) => item.id === searchId);
 

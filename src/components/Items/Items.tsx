@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-
-export default function Items({ search }) {
+import { ItemType } from "../../types";
+export default function Items({ search }: { search: ItemType[] }) {
   return (
     <>
       {search.map((item) => (

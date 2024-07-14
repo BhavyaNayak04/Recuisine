@@ -1,4 +1,5 @@
-export default function Item({ item }) {
+import { ItemType } from "../../types";
+export default function Item({ item }: { item: ItemType }) {
   return (
     <>
       <div className="flex justify-between gap-4 items-start">

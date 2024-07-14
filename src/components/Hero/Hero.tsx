@@ -1,5 +1,5 @@
 import Carousel from "../Carousel/Carousel";
-import { images } from "../constants/index";
+import { images } from "../../constants/index";
 import Content from "../Content/Content";
 
 export default function Hero() {

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { search } from "../constants";
+import { search } from "../../constants";
 import Items from "../Items/Items";
 
 export default function Search() {
-  const [radius, setRadius] = useState(0);
+  const [radius, setRadius] = useState<number>(0);
   return (
     <div className="container flex flex-col md:flex-row md:min-h-screen md:max-h-screen gap-2">
       <div className="flex flex-col basis-1/3 space-y-3">
@@ -14,7 +14,7 @@ export default function Search() {
             type="number"
             name="radius"
             value={radius}
-            onChange={(e) => setRadius(e.target.value)}
+            onChange={(e) => setRadius(parseInt(e.target.value))}
             className="w-min p-1 indent-1"
           ></input>
         </form>

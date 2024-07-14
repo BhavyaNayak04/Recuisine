@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-export default function Orders({ orders }) {
+import { ItemType } from "../../types";
+export default function Orders({ orders }: { orders: ItemType[] }) {
   return (
     <>
       {orders.map((item) => (
