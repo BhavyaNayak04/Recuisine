@@ -1,3 +1,3 @@
-## cd react-project
+## cd Recuisine
 ## npm i
 ## npm run dev
