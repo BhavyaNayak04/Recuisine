@@ -1,3 +1,3 @@
-cd react-project
-npm i
-npm run dev
+#cd react-project
+#npm i
+#npm run dev
